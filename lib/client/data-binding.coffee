@@ -8,22 +8,17 @@ $(document).on "click keydown keyup change", "[mb-key]", (e) ->
 		mbOn = ['click']
 
 	if _.contains mbOn, e.type
-		console.log 'yes!'
 
 		#Execute
 		key = $e.attr 'mb-key'
 		value = $e.attr('mb-value') || $e.val()
 
-
-
 		if $e.attr 'mb-return'
 			mbReturn = $e.attr('mb-return')
 
-			mbReturn = mbReturn.replace('x','value')
-
 			value = eval(mbReturn)
 
-		console.log 'Session.set("' + key + '","' + value + '")'
+		# console.log 'Session.set("' + key + '","' + value + '")'
 		Session.set key, value
 
 
