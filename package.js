@@ -1,8 +1,8 @@
 Package.describe({
   name: 'yogiben:data-binding',
-  summary: ' /* Fill me in! */ ',
-  version: '1.0.0',
-  git: ' /* Fill me in! */ '
+  summary: 'Databinding schema for setting Session key pairs',
+  version: '0.0.0',
+  git: 'https://github.com/yogiben/meteor-data-binding '
 });
 
 
