@@ -1,9 +1,14 @@
 Meteor Data Binding
 ===================
 
-** Really experimental **
+**Really experimental**
 
-Use markup instead of writing custom events for setting Session kev, value pairs.
+This package lets you use markup instead of writing out simple custom events.
+
+`<button mb-key="foo" mb-value="bar"></button>`
+
+will execute `Session.set('foo','bar');`
+
 
 ### `mb-key` ###
 To define the Session key
@@ -38,5 +43,6 @@ The `Start edit` button sets the `edit-interests` key to `true`.
 
 ```
 <input type="text" mb-on="change,keyup" mb-key="nickname" />
+```
 
-The value of the `input` will be stored with the `nickname` Session key on a `change` or `keyup` event.
+The value of the input will be stored with the `nickname` Session key on a `change` or `keyup` event.
